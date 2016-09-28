@@ -26,7 +26,7 @@
     "dataSource": "db",
     "public": false
   },
-  "Todo": {
+  "Game": {
     "dataSource": "db",
     "public": true
   }

@@ -1,5 +1,5 @@
 {
-  "name": "Todo",
+  "name": "Game",
   "base": "PersistedModel",
   "idInjection": true,
   "properties": {

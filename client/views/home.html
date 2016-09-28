@@ -1,0 +1,30 @@
+<h1>Game list</h1>
+
+<hr>
+
+<select class="form-control"
+    ng-model="home.game"
+    ng-options="option.name for option in home.gameTypes"
+    ng-change="home.updateGame(home.game)">
+</select>
+
+<hr>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Player</th>
+      <th>Wins</th>
+      <th>Losses</th>
+      <th>Rank</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="player in home.players">
+      <th>{{ player.name }}</th>
+      <td>{{ player.wins }}</td>
+      <td>{{ player.losses }}</td>
+      <td>{{ player.rank || 'N/A' }}</td>
+    </tr>
+  </tbody>
+</table>

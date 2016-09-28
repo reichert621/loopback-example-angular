@@ -11,11 +11,11 @@ angular
   .config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
       $urlRouterProvider) {
     $stateProvider
-      .state('todo', {
+      .state('home', {
         url: '',
-        templateUrl: 'views/todo.html',
-        controller: 'TodoController'
+        templateUrl: 'views/home.html',
+        controller: 'HomeController as home'
       });
 
-    $urlRouterProvider.otherwise('todo');
+    $urlRouterProvider.otherwise('home');
   }]);
